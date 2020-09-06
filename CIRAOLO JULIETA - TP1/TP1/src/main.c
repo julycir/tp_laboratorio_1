@@ -10,8 +10,19 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <functions.h>
+
 
 int main(void) {
-	puts(""); /* prints  */
-	return EXIT_SUCCESS;
+
+	int firstNumber;
+	int secondNumber;
+
+	printf("Ingrese un primer operando: ");
+	scanf("%d",&firstNumber);
+	printf("Ingrese un segundo operando: ");
+	scanf("%d",&secondNumber);
+
+	return 0;
 }
+
