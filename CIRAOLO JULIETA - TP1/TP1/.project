@@ -3,6 +3,7 @@
 	<name>TP1</name>
 	<comment></comment>
 	<projects>
+		<project>LaboratorioProgramacion1</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

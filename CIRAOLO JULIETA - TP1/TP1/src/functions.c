@@ -1,34 +1,46 @@
-int addNumbers (int firstNumber, int secondNumber)
+//implementación de las funciones matemáticas de la calculadora
+
+#include "functions.h"
+
+int AddNumbers (int firstNumber, int secondNumber)
 {
     int additionResult;
     additionResult = firstNumber + secondNumber;
     return additionResult;
 }
 
-int subtractNumbers (int firstNumber, int secondNumber)
+int SubtractNumbers (int firstNumber, int secondNumber)
 {
     int subtractionResult;
     subtractionResult = firstNumber - secondNumber;
     return subtractionResult;
 }
 
-float divideNumbers (int firstNumber, int secondNumber)
+float DivideNumbers (int firstNumber, int secondNumber)
 {
     float divisionResult;
-    divisionResult = firstNumber / secondNumber;
+    if (secondNumber != 0) {
+        divisionResult = firstNumber / secondNumber;
+    }
     return divisionResult;
 }
 
-int multiplyNumbers (int firstNumber, int secondNumber)
+int MultiplyNumbers (int firstNumber, int secondNumber)
 {
     int multiplicationResult;
     multiplicationResult = firstNumber * secondNumber;
     return multiplicationResult;
 }
 
-int factorialNumbers (int firstNumber, int secondNumber)
+int FactorialNumbers (int firstNumber)
 {
-    int factorialResult;
-    // ...
-    return factorialResult;
+	int factorialResult;
+
+	if (firstNumber==0) {
+	factorialResult = 1;
+	} else {
+	factorialResult = firstNumber * factorial (firstNumber - 1);
+	}
+	return factorialResult;
 }
+

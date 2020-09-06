@@ -1,13 +1,7 @@
-/*
- * functions.h
- *
- *  Created on: 6 sep. 2020
- *      Author: Julieta
- */
+//prototipos de las funciones matemáticas de la calculadora
 
-#ifndef FUNCTIONS_H_
-#define FUNCTIONS_H_
-
-
-
-#endif /* FUNCTIONS_H_ */
+int AddNumbers (int, int);
+int SubtractNumbers (int, int);
+float DivideNumbers (int, int);
+int MultiplyNumbers (int, int);
+int FactorialNumbers (int);
