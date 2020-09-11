@@ -32,15 +32,14 @@ int MultiplyNumbers (int firstNumber, int secondNumber)
     return multiplicationResult;
 }
 
-int FactorialNumbers (int firstNumber)
+/*int FactorialNumbers (int firstNumber)
 {
 	int factorialResult;
 
 	if (firstNumber==0) {
 	factorialResult = 1;
 	} else {
-	factorialResult = firstNumber * factorial (firstNumber - 1);
+	factorialResult = firstNumber * factorialResult (firstNumber - 1);
 	}
 	return factorialResult;
-}
-
+}*/

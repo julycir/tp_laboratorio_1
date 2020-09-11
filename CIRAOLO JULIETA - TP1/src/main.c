@@ -15,8 +15,7 @@ int main(void) {
     int subtractionResult;
     float divisionResult;
     int multiplicationResult;
-    int factorialResultA;
-    int factorialResultB;
+    //int factorialResult;
 
     do
     {
@@ -43,15 +42,14 @@ int main(void) {
             	subtractionResult = SubtractNumbers(firstNumber, secondNumber);
             	divisionResult = DivideNumbers(firstNumber, secondNumber);
             	multiplicationResult = MultiplyNumbers(firstNumber, secondNumber);
-            	factorialResultA = FactorialNumbers(firstNumber);
-            	factorialResultB = FactorialNumbers(secondNumber);
+            	//factorialResult = FactorialNumbers(firstNumber);
             	break;
             case 4: // se informan los resultados por printf
             	printf("a. El resultado de A+B es: %d\n", additionResult);
             	printf("b. El resultado de A-B es: %d\n", subtractionResult);
             	printf("c. El resultado de A/B es: %f\n", divisionResult);
             	printf("d. El resultado de A*B es: %d\n", multiplicationResult);
-            	printf("e. El factorial de A es: %d", factorialResultA, " y el factorial de B es %d", factorialResultB);
+            	//printf("e. El factorial de A es: %d", factorialResult);
             	break;
             case 5:
                 printf("\nGracias por usar el programa...\n");
