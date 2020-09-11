@@ -51,7 +51,7 @@ int main(void) {
             	printf("b. El resultado de A-B es: %d\n", subtractionResult);
             	printf("c. El resultado de A/B es: %f\n", divisionResult);
             	printf("d. El resultado de A*B es: %d\n", multiplicationResult);
-            	printf("e. El factorial de A es: %d", factorialResultA " y el factorial de B es %d", factorialResultB);
+            	printf("e. El factorial de A es: %d", factorialResultA, " y el factorial de B es %d", factorialResultB);
             	break;
             case 5:
                 printf("\nGracias por usar el programa...\n");
