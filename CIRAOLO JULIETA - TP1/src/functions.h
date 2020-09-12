@@ -1,8 +1,8 @@
 //prototipos de las funciones matemáticas de la calculadora
 //tipo de dato que devuelve - nombre de la funcion - tipo y cantidad parametros que recibe
 
-int AddNumbers (int, int);
-int SubtractNumbers (int, int);
-float DivideNumbers (int, int);
-int MultiplyNumbers (int, int);
+float AddNumbers (float, float);
+float SubtractNumbers (float, float);
+float DivideNumbers (float, float);
+float MultiplyNumbers (float, float);
 int FactorialNumbers (int);
