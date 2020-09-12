@@ -49,11 +49,11 @@ int main(void) {
             	factorialResultB = FactorialNumbers(secondNumber);
             	break;
             case 4: // se informan los resultados por printf
-            	printf("\na. El resultado de %.2f + %.2f es: %.2f", firstNumber, secondNumber, additionResult);
-            	printf("\nb. El resultado de %.2f - %.2f es: %.2f", firstNumber, secondNumber, subtractionResult);
-            	printf("\nc. El resultado de %.2f / %.2f es: %.2f", firstNumber, secondNumber, divisionResult);
-            	printf("\nd. El resultado de %.2f * %.2f es: %.2f", firstNumber, secondNumber, multiplicationResult);
-            	printf("\ne. El factorial de %.2f es: %d y el factorial de %.2f es: %d\n", firstNumber, factorialResultA, secondNumber, factorialResultB);
+            	printf("\na. El resultado de A = %.2f + B = %.2f es: %.2f", firstNumber, secondNumber, additionResult);
+            	printf("\nb. El resultado de A = %.2f - B = %.2f es: %.2f", firstNumber, secondNumber, subtractionResult);
+            	printf("\nc. El resultado de A = %.2f / B = %.2f es: %.2f", firstNumber, secondNumber, divisionResult);
+            	printf("\nd. El resultado de A = %.2f * B = %.2f es: %.2f", firstNumber, secondNumber, multiplicationResult);
+            	printf("\ne. El factorial de A = %.2f es: %d y el factorial de B = %.2f es: %d\n", firstNumber, factorialResultA, secondNumber, factorialResultB);
             	break;
             case 5: //en caso que el usuario decida salir
                 printf("\nGracias por usar el programa...\n");
