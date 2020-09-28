@@ -8,18 +8,52 @@ Autora: Julieta Ciraolo */
 #include <string.h>
 #include "menu.h"
 #include "ArrayEmployees.h"
+#include "pedirDatos.h"
 
+#define employeesAmount 1
+#define EMPTY 0
+#define OCCUPIED 1
 
-int main(void) {
+int main(void)
+{
 	setbuf(stdout,NULL); //para poder ver en la consola
-	int opcion=menu();
-	/*do{
+
+	Employee list[employeesAmount];
+	int id=0;
+	char name[20];
+	char lastName[20];
+	float salary=0;
+	int sector=0;
+
+	int opcion=0;
+	int indexFreeSpace;
+	//int indexSearchResult;
+
+    initEmployees(list,employeesAmount,EMPTY);
+
+	do{
+	    int opcion=menu();
+
 		switch(opcion)
 		{
 		case 1:
-
+		    indexFreeSpace=LookForEmptySpace(list,employeesAmount);
+		    if(indexFreeSpace==-1)
+		    {
+		        printf("No hay lugares libres.");
+		    }
+            addEmployee(list,employeesAmount,indexFreeSpace,name[20],lastName[20],salary,sector);
+            break;
+        case 2:
+            findEmployeeById(list,employeesAmount,id);
+            break;
+        case 3:
+            removeEmployee(list,employeesAmount,id);
+            break;
+        case 4:
+            printEmployees(list,employeesAmount);
+            break;
 		}
-
-	} while(opcion!=5);*/
+	} while(opcion!=5);
 	return 0;
 }

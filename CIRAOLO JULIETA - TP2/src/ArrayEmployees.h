@@ -1,7 +1,7 @@
 //BIBLIOTECA DE FUNCIONES “ArrayEmployees”
 
 //Estructura "Employee"
-struct
+typedef struct
 {
 	int id;
 	char name[51];
@@ -9,17 +9,14 @@ struct
 	float salary;
 	int sector;
 	int isEmpty;
-}typedef Employee;
+}Employee;
 
-int initEmployees(Employee list[], int len); // seria poner en true is empty empleados
-
-int addEmployee(Employee list[], int len, int id, char name[],char
-lastName[],float salary,int sector); // esta crear empleado, iniciliaza empleado con datos
-
+int initEmployees(Employee list[], int len,int value);
+int LookForEmptySpace(Employee list[],int len);
+int addEmployee(Employee list[], int len, int id, char name,char lastName,float salary,int sector);
 int findEmployeeById(Employee list[], int len,int id);
-
 int removeEmployee(Employee list[], int len, int id);
+int printEmployees(Employee list[], int len);
 
-int sortEmployees(Employee list[], int len, int order);
+//int sortEmployees(Employee list[], int len, int order);
 
-int printEmployees(Employee list[], int length);
