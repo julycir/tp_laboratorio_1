@@ -24,35 +24,34 @@ int main(void)
 	char lastName[20];
 	float salary=0;
 	int sector=0;
+	int opcion;
 
-	int opcion=0;
 	int indexFreeSpace;
 	//int indexSearchResult;
 
-    initEmployees(list,employeesAmount,EMPTY);
+    initEmployees(list,employeesAmount,EMPTY);//inicializo lista de empleados vacía
 
 	do{
-	    int opcion=menu();
-
+	    opcion=menu();
 		switch(opcion)
 		{
-		case 1:
-		    indexFreeSpace=LookForEmptySpace(list,employeesAmount);
-		    if(indexFreeSpace==-1)
-		    {
-		        printf("No hay lugares libres.");
-		    }
-            addEmployee(list,employeesAmount,indexFreeSpace,name[20],lastName[20],salary,sector);
-            break;
-        case 2:
-            findEmployeeById(list,employeesAmount,id);
-            break;
-        case 3:
-            removeEmployee(list,employeesAmount,id);
-            break;
-        case 4:
-            printEmployees(list,employeesAmount);
-            break;
+			case 1:
+				indexFreeSpace=LookForEmptySpace(list,employeesAmount);
+				if(indexFreeSpace==-1)
+				{
+					printf("No hay lugares libres.");
+				}
+				addEmployee(list,employeesAmount,indexFreeSpace,name[20],lastName[20],salary,sector);
+				break;
+			case 2:
+				findEmployeeById(list,employeesAmount,id);
+				break;
+			case 3:
+				removeEmployee(list,employeesAmount,id);
+				break;
+			case 4:
+				printEmployees(list,employeesAmount);
+				break;
 		}
 	} while(opcion!=5);
 	return 0;

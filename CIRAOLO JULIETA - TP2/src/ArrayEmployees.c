@@ -57,17 +57,19 @@ free space] - (0) if Ok
 **/
 int addEmployee(Employee list[], int len, int id, char name,char lastName,float salary,int sector)
 {
-	Employee newEmployee;
+
+	//aca falta un if con empty space
+	Employee newEmployee; //esto donde va?
 	newEmployee.id=rand() % 1000;;
     fflush(stdin);
     scanf("%[^\n]",newEmployee.name);
-    printf("Ingrese su apellido: ");
+    printf("Ingrese su apellido: \n");
     fflush(stdin);
     scanf("%[^\n]",newEmployee.lastName);
-    juli_PedirNumeroFlotante(&newEmployee.salary,"Ingrese su salario: ","Por favor, ingrese su salario: ",1000,1500,2);
+    juli_PedirNumeroFlotante(&newEmployee.salary,"Ingrese su salario: \n","Por favor, ingrese su salario: \n",1000,1500,2);
     //printf("Ingrese su salario: ");
     //scanf("%f",&newEmployee.salary);
-    juli_PedirNumeroEntero(&newEmployee.sector,"Ingrese su sector: ","Por favor, ingrese su sector: ",1,10,2);
+    juli_PedirNumeroEntero(&newEmployee.sector,"Ingrese su sector: \n","Por favor, ingrese su sector: \n",1,10,2);
 
    // printf("Ingrese su sector: ");
    // scanf("%d",&newEmployee.sector);
