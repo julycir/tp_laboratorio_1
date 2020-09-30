@@ -53,6 +53,7 @@ int main(void)
 				printEmployees(list,employeesAmount);
 				break;
 		}
+		printf("%d",opcion);
 	} while(opcion!=5);
 	return 0;
 }

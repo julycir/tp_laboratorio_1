@@ -57,25 +57,31 @@ free space] - (0) if Ok
 **/
 int addEmployee(Employee list[], int len, int id, char name,char lastName,float salary,int sector)
 {
-
+	int retorno=-1;
 	//aca falta un if con empty space
-	Employee newEmployee; //esto donde va?
-	newEmployee.id=rand() % 1000;;
-    fflush(stdin);
-    scanf("%[^\n]",newEmployee.name);
-    printf("Ingrese su apellido: \n");
-    fflush(stdin);
-    scanf("%[^\n]",newEmployee.lastName);
-    juli_PedirNumeroFlotante(&newEmployee.salary,"Ingrese su salario: \n","Por favor, ingrese su salario: \n",1000,1500,2);
-    //printf("Ingrese su salario: ");
-    //scanf("%f",&newEmployee.salary);
-    juli_PedirNumeroEntero(&newEmployee.sector,"Ingrese su sector: \n","Por favor, ingrese su sector: \n",1,10,2);
-
-   // printf("Ingrese su sector: ");
-   // scanf("%d",&newEmployee.sector);
-    newEmployee.isEmpty=OCCUPIED;
-    return -1;
+	int i;
+	for(i=0;i<len;i++)
+	{
+		int idEmployee=1;
+		list[i].id=idEmployee+=1;
+		//es una variable que se inicia en 1 y se va aumentando cada vez que carguen un alumno mas
+		fflush(stdin);
+		scanf("%[^\n]",list[i].name);
+		printf("Ingrese su apellido: \n");
+		fflush(stdin);
+		scanf("%[^\n]",list[i].lastName);
+		//juli_PedirNumeroFlotante(list[i].salary,"Ingrese su salario: \n","Por favor, ingrese su salario: \n",1000,1500,2);
+		printf("Ingrese su salario: ");
+		scanf("%f",&list[i].salary);
+		//juli_PedirNumeroEntero(list[i].sector,"Ingrese su sector: \n","Por favor, ingrese su sector: \n",1,10,2);
+		printf("Ingrese su sector: ");
+	    scanf("%d",&list[i].sector);
+		list[i].isEmpty=OCCUPIED;
+		retorno=0;
+		}
+	return retorno;
 }
+
 
 /** \brief Finds an Employee by Id and returns the index position in array.
 * \param list Employee*
@@ -150,3 +156,4 @@ int printEmployees(Employee list[], int len)
     return 0;
 }
 
+//ORDENAR POR NOMBRE - creo que es lo mismo pero hay que cambiar la condicion del if por una que evalúe los codigos ascii,  lo mismo que un burbujeo comun* Era con la función strcmp

@@ -9,9 +9,31 @@
 */
 int menu()
 {
+	/*
+
 	int opcion;
+	printf("NOMINA DE EMPLEADOS\n");
+	printf("Bienvenido, elija la opción que desee realizar.\n");
+	printf("Opción 1: ALTA\n");
+	printf("Opción 2: MODIFICAR\n");
+	printf("Opción 3: BAJA\n");
+	printf("Opción 4: INFORMES\n");
+	printf("Opción 5: SALIR\n");
+	scanf("%d",&opcion);
+	return opcion;
+
+	int* opcion;
 	printf("NOMINA DE EMPLEADOS\nBienvenido, elija la opción que desee realizar.\n");
 	opcion=juli_PedirNumeroEntero(&opcion,"1.ALTA\n2.BAJA\n3.MODIFICAR\n4.INFORMES\n5.SALIR\n","No es una opción válida\n",1,5,2);
-	return opcion;
-}
+	return opcion;*/
 
+	int opcion;
+
+
+	printf("NOMINA DE EMPLEADOS\nBienvenido, elija la opción que desee realizar.\n");
+	int opcionElegida = juli_PedirNumeroEntero(&opcion,"1.ALTA\n2.BAJA\n3.MODIFICAR\n4.INFORMES\n5.SALIR\n","No es una opción válida\n",1,5,2);
+
+
+	return opcion;
+
+}
